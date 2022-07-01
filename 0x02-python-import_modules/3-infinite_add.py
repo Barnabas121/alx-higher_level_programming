@@ -2,6 +2,7 @@
 if __name__ == "__main__":
     import sys
     result = 0
-    for i in range(1, len(sys.argv)):
+    args = len(sys.argv)
+    for i in range(1, args):
         result += int(sys.argv[i])
-    print("{:d}".format(result))
+    print("{}".format(result))
